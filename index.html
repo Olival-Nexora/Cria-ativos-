@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cria'Ativos - Portfólio Criativo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+
+    header {
+      background: url('cabecacria.png') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      text-align: center;
+      padding-bottom: 60px;
+    }
+
+    header img {
+      width: 180px;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+      color: #ffcc00;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #fff;
+      max-width: 600px;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      margin-top: 10px;
+    }
+
+    section.portfolio {
+      padding: 60px 20px;
+      background-color: #101010;
+      text-align: center;
+    }
+
+    section.portfolio h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #ffcc00;
+    }
+
+    .arts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 0 20px;
+    }
+
+    .arts-grid img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease;
+    }
+
+    .arts-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #000;
+      color: #999;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logocria.png" alt="Logo Cria Ativos">
+    <h1>Seus desejos realizados</h1>
+    <p>Transformamos ideias em identidade visual com criatividade e profissionalismo.</p>
+  </header>
+
+  <section class="portfolio">
+    <h2>Portfólio Criativo</h2>
+    <div class="arts-grid">
+      <img src="arte1.png" alt="Arte Promocional 1">
+      <img src="arte2.png" alt="Arte Promocional 2">
+      <img src="arte3.png" alt="Arte Promocional 3">
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Cria'Ativos • Desenvolvimento de identidade visual e peças de divulgação criativas.
+  </footer>
+
+</body>
+</html>
