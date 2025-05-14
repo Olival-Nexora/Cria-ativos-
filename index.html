@@ -12,59 +12,37 @@
     }
 
     body, html {
-      height: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #0a0a0a;
       color: #fff;
     }
 
-    header {
+    header img {
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      background: url('cabecacria.png') no-repeat center center;
-      background-size: cover;
-      min-height: 80vh;
-      padding: 60px 20px;
-      text-align: center;
+      height: auto;
+      display: block;
     }
 
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: bold;
+    section.intro {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    section.intro h1 {
+      font-size: 2rem;
       color: #ffcc00;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.2rem;
-      color: #fff;
+    section.intro p {
+      font-size: 1.1rem;
       max-width: 600px;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-      margin-bottom: 20px;
-    }
-
-    .whatsapp-btn {
-      background-color: #25D366;
-      color: white;
-      font-weight: bold;
-      padding: 15px 30px;
-      border: none;
-      border-radius: 30px;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .whatsapp-btn:hover {
-      background-color: #1ebe5d;
+      margin: 0 auto;
+      color: #ddd;
     }
 
     section.portfolio {
-      padding: 60px 20px;
+      padding: 60px 20px 30px;
       background-color: #101010;
       text-align: center;
     }
@@ -93,6 +71,27 @@
       transform: scale(1.05);
     }
 
+    .whatsapp-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+
     footer {
       background-color: #000;
       color: #999;
@@ -105,10 +104,13 @@
 <body>
 
   <header>
+    <img src="cabecacria.png" alt="Cabeçalho Cria'Ativos">
+  </header>
+
+  <section class="intro">
     <h1>Seus desejos realizados</h1>
     <p>Transformamos ideias em identidade visual com criatividade e profissionalismo.</p>
-    <a class="whatsapp-btn" href="https://wa.me/5586999334312" target="_blank">Orçamento Grátis</a>
-  </header>
+  </section>
 
   <section class="portfolio">
     <h2>Portfólio Criativo</h2>
@@ -119,9 +121,14 @@
     </div>
   </section>
 
+  <div class="whatsapp-container">
+    <a class="whatsapp-btn" href="https://wa.me/5586999334312" target="_blank">Orçamento Grátis</a>
+  </div>
+
   <footer>
     © 2025 Cria'Ativos • Desenvolvimento de identidade visual e peças de divulgação criativas.
   </footer>
 
 </body>
 </html>
+
